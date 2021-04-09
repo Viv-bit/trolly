@@ -1,38 +1,305 @@
-.App {
+body{
+  background-color: #f1f2f3;
+}
+
+* {
+  box-sizing: border-box;
+  color: #000;
+}
+.main {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  padding: 20px;
+  width: 100%;
+  
+}
+.payment {
+  /* width: 830px; */
+  padding: 60px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.personal {
+  display: flex;
+  justify-content: space-between;
+}
+.user {
+  height: 50px;
+  width: 170px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  background-color: #dfdfdf;
+  margin-top: 15px;
+}
+.arrow {
+  height: 20px;
+  width: 20px;
+  margin-left: 10px;
+}
+
+.face {
+  min-height: 40px;
+  min-width: 40px;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+.name {
+  font-size: 16px;
+  margin-left: 10px;
+}
+.cardSecurity {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.details {
+  font-size: 42px;
+  font-weight: 500;
+  opacity: 0.7;
+}
+.secure {
+  display: grid;
+  grid-template-columns: 25px 180px;
+  grid-column-gap: 12px;
+}
+.secureStart {
+  height: 35px;
+  width: 25px;
+  margin-top: 10px;
+}
+.secureEnd {
+  width: 180px;
+  margin-top: 10px;
+}
+.secureTitle {
+  margin: 0;
+  margin-bottom: 5px;
+}
+.secureDescription {
+  font-size: 13px;
+  opacity: 0.5;
+}
+.option {
+  display: grid;
+  grid-template-columns: 120px 120px 120px;
+  grid-column-gap: 10px;
+  border-bottom: 0.5px #dfdfdf solid;
+}
+.optionDetail {
+  font-weight: 600;
+  opacity: 0.6;
+  font-size: 20px;
+  padding-bottom: 20px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.optionDetail:hover {
+  opacity: 1;
+  border-bottom: 1px  #707070 solid;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cards {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  grid-column-gap: 50px;
+  margin-top: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cardDetails {
+  margin-top: 40px;
+}
+.card {
+  height: 138px;
+  width: 240px;
+  border-radius: 10px;
+}
+.one {
+  background-color: #CED9FD;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding-right: 15px;
+}
+.two {
+  background-color: #F9CBA1;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding-right: 15px;
+  margin-top: 20px;
+}
+.three {
+  background-color: #BDDBA6;
+  margin-top: 20px;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.card1No {
+  text-align: right;
+  padding-top: 20px;
+}
+.plus {
+  margin-right: 30px;
+  display: flex;
+}
+.cardIcon{
+  width: 60px;
+  height: 50px;
+  justify-self: flex-end;
+  object-fit: contain;
+}
+.plusIcon {
+  margin-left: 15px;
+  width: 25px;
+  height: 25px;
+  opacity: 0.7;
+}
+.plusWord {
+  margin-top: 2px;
+  font-size: 16px;
+}
+.cardForm {
+  margin-top: 40px;
+}
+.cardInfo {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin-bottom: 30px;
+
+}
+.cardMini {
+  display: flex;
+}
+.input {
+  margin-top: 15px;
+  height: 50px;
+  width: 350px;
+  border: none;
+  background-color: #f0eeee;
+  border-radius: 7px;
+  padding-left: 15px;
+  font-weight: 600;
+}
+.mini {
+  padding-right: 20px;
+  margin-top: 20px;
+}
+.inputMini {
+  padding-left: 15px;
+  width: 100px;
+  height: 50px;
+  margin-top: 15px;
+  border: none;
+  background-color: #f0eeee;
+  border-radius: 7px;
+  font-weight: 600;
+}
+.buttonBlack {
+  width: 160px;
+  height: 65px;
+  margin-top: 15px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  border-radius: 7px;
+  opacity: 0.8;
+  font-size: 16px;
+}
+.buttonPlain {
+  border: none;
+  padding-left: 15px;
+  margin-left: 15px;
+  height: 65px;
+  background-color: #fff;
+  font-size: 16px;
+}
+label {
+  opacity: 0.5;
+  font-weight: 600;
+}
+.order {
+  padding: 50px;
+}
+.orderTitle {
+  font-size: 42px;
+  font-weight: 500;
+  opacity: 0.85;
+}
+.orderProcess {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+}
+.orderCard {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  margin-top: 15px;
+}
+.orderStep {
+  padding-left: 10px;
+  opacity: 0.6;
+  font-size: 16px;
+}
+.orderStep:hover{
+  opacity: 1;
+}
+.orderIcon {
+  height: 20px;
+  width: 20px;
+  object-fit: contain;
+}
+.contain {
+  border: none;
+  border-radius: 50%;
+  height: 40px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.cartContain {
+  background-color: #CED9FD;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.cardContain {
+  background-color: #F9CBA1;
+}
+.review {
+  background-color: #BDDBA6;
+}
+.orderDetails {
+  margin-top: 40px;
+}
+.orderDetail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  font-weight: 600;
+  opacity: 0.6;
+}
+.brands {
+  background-color: #fff;
+  border-radius: 7px;
+  margin: 15px 0;
+  opacity: 0.9;
+}
+.total {
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 738px) {
+  body {
+    transform: scale(0.8);
   }
-  to {
-    transform: rotate(360deg);
+  .main {
+    display: inline-block;
+    padding: 0px;
+  }
+  .cards {
+    display: inline-block;
+  }
+  .payment {
+    padding: 5px;
+  }
+  .cardSecurity{
+    display: inline-block;
+    margin-bottom: 25px;
   }
 }
